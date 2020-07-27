@@ -1,0 +1,27 @@
+@import './styles/7.Settings/settings-breakpoints';
+@import './styles/7.Settings/settings-typography';
+@import './styles/7.Settings/settings-colors';
+@import './styles/7.Settings/settings-animations';
+@import './styles/7.Settings/settings-shadows';
+
+@import './styles/5.Generic/generic-normalize';
+
+@import './styles/4.Elements/elements-body';
+@import './styles/4.Elements/elements-images';
+@import './styles/4.Elements/elements-links';
+@import './styles/4.Elements/elements-lists';
+@import './styles/4.Elements/elements-list-items';
+@import './styles/4.Elements/elements-headings';
+
+@import './styles/3.Objects/objects-containers';
+
+@import './styles/2.Components/components-header';
+@import './styles/2.Components/components-buttons';
+
+@import './styles/1.Utilities/utilities-uppercase';
+@import './styles/1.Utilities/utilities-arrow-width';
+@import './styles/1.Utilities/utilities-logo-width';
+@import './styles/1.Utilities/utilities-magnifying-glass-width';
+@import './styles/1.Utilities/utilities-burger-menu';
+
+
