@@ -1,0 +1,14 @@
+.c-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 22px;
+    border-radius: 100px;
+    box-shadow: $dp4-shadow;
+
+    &--orange-filled{
+        background-color: $secondary-800;
+        color: $generic-white;
+
+    }
+}

@@ -1,0 +1,10 @@
+a{  
+    display: inline-block;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+
+    &:hover{
+        cursor: url('./assets/other/cursor.svg'), auto;
+    }
+}

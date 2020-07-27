@@ -1,0 +1,8 @@
+.u-burger-menu{
+    display: none;
+    min-width: 24px;
+
+    @include for-phone{
+        display: inline-block;
+    }
+}
