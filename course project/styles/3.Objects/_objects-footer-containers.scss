@@ -1,0 +1,38 @@
+.o-footer-grid-container{
+    display: grid;
+    grid-template-columns: repeat(1, 220px) repeat(1, 256px) repeat(1, 145px) repeat(1, 167px) repeat(1, 177px);
+    grid-template-rows: 1fr;
+    column-gap: 78px;
+    row-gap: 32px;
+    justify-content: center;
+
+    @include general-responsive{
+        grid-template-columns: repeat(auto-fit, minmax(124px, 168px));
+    }
+
+    @include iphone-8{
+        grid-template-columns: 145px 167px;
+        column-gap: 23px;
+    }
+
+
+    .o-social-icons-container{
+        font-size: 1.75em;
+
+        a{
+            margin-right: 30px;
+        }
+
+        @include iphone-8{
+            margin-top: 20px;
+        }
+    }
+}
+
+.o-copyright-text-wrapper{
+    text-align: center;
+
+    p{
+        margin: 0;
+    }
+}

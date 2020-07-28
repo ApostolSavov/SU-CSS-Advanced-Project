@@ -1,0 +1,72 @@
+.c-footer {
+    background-color: $grey-700;
+    border-top: 12px solid $grey-500;
+    height: 324px;
+    width: 100%;
+    padding: 64px 0;
+
+    @include general-responsive{
+        height: auto;
+    }
+
+    @include iphone-8{
+        padding: 52px 20px 32px;
+    }
+
+    &__alien-image {
+        position: relative;
+
+        @include general-responsive{
+            display: none;
+        }
+
+        &::after{
+            content: '';
+            width: 220px;
+            height: 403px;
+            background-image: url('./assets/images/orange-alien.svg');
+            background-repeat: no-repeat;
+            position: absolute;
+            bottom: -43.5px;
+            left: 0;
+        }
+    }
+
+    &__nav-column {
+        
+        h4 {
+            color: $generic-white;
+            white-space: nowrap;
+            margin-top: 0;
+            line-height: 22px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-flow: column wrap;
+        height: 162px;
+
+        @include general-responsive{
+            height: auto;
+        }
+    }
+
+    &__item {
+        line-height: 19px;
+        padding-bottom: 12px;
+    }
+
+    &__link {
+        white-space: nowrap;
+    }
+
+    a {
+        color: $grey-200;
+
+        &:hover {
+            color: $primary-300;
+        }
+    }
+
+}

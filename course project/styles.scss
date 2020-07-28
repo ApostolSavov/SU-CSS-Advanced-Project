@@ -13,15 +13,23 @@
 @import './styles/4.Elements/elements-list-items';
 @import './styles/4.Elements/elements-headings';
 
-@import './styles/3.Objects/objects-containers';
+@import './styles/3.Objects/objects-header-containers';
+@import './styles/3.Objects/objects-footer-containers';
+@import './styles/3.Objects/objects-general-containers';
 
 @import './styles/2.Components/components-header';
 @import './styles/2.Components/components-buttons';
+@import './styles/2.Components/components-footer';
 
 @import './styles/1.Utilities/utilities-uppercase';
 @import './styles/1.Utilities/utilities-arrow-width';
 @import './styles/1.Utilities/utilities-logo-width';
 @import './styles/1.Utilities/utilities-magnifying-glass-width';
 @import './styles/1.Utilities/utilities-burger-menu';
+@import './styles/1.Utilities/utilities-copyright-text';
+@import './styles/1.Utilities/utilities-responsive-hidden';
+@import './styles/1.Utilities/utilities-responsive-order';
+@import './styles/1.Utilities/utilities-desktop-hidden';
+@import './styles/1.Utilities/utilities-horizontal-line';
 
 

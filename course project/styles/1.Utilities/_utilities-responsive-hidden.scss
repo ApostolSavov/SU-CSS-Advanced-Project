@@ -1,0 +1,5 @@
+.u-responsive-hidden{
+    @include iphone-8{
+        display: none;
+    }
+}

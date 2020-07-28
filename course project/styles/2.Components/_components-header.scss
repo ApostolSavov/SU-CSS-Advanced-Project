@@ -9,7 +9,7 @@
     font-weight: 800;
     background-color: $generic-white;
 
-    @include for-phone{
+    @include general-responsive{
         padding: 0 20px;
     }
 

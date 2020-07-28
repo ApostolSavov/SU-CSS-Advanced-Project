@@ -1,0 +1,7 @@
+.u-desktop-hidden{
+    display: none;
+
+    @include iphone-8{
+        display: inline-block;
+    }
+}

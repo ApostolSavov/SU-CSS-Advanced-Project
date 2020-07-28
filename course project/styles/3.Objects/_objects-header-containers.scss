@@ -1,0 +1,24 @@
+.o-header-grid-container{
+    display: grid;
+    grid-template-columns: 150px auto min-content;
+    grid-template-rows: 74px;
+}
+
+%flex-center{
+    display: flex;
+    align-items: center;
+}
+
+.o-logo-container{
+    @extend %flex-center;
+    justify-content: space-between;
+}
+
+.o-magnifying-glass-container{
+    @extend %flex-center;
+    justify-content: center;
+
+    @include for-phone {
+        display: none;
+    }
+}
