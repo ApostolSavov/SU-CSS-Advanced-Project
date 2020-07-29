@@ -1,0 +1,26 @@
+.o-main-container{
+
+    &::before{
+        content: '';
+        position: absolute;
+        background-color: $blue-400;
+        height: 302px;
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
+
+    .o-main-grid-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, min-content) ;
+    }
+}
+
+.o-details-container{
+    display: grid;
+    grid-template-columns: repeat(7, min-content);
+    grid-template-rows: 1fr;
+    column-gap: 32px;
+    align-items: center;
+}

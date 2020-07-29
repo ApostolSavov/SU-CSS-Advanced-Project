@@ -8,6 +8,7 @@
     font-size: 13px;
     font-weight: 800;
     background-color: $generic-white;
+    z-index: 10;
 
     @include general-responsive{
         padding: 0 20px;

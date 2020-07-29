@@ -12,14 +12,18 @@
 @import './styles/4.Elements/elements-lists';
 @import './styles/4.Elements/elements-list-items';
 @import './styles/4.Elements/elements-headings';
+@import './styles/4.Elements/elements-spans';
 
 @import './styles/3.Objects/objects-header-containers';
 @import './styles/3.Objects/objects-footer-containers';
 @import './styles/3.Objects/objects-general-containers';
+@import './styles/3.Objects/objects-main-containers';
 
 @import './styles/2.Components/components-header';
 @import './styles/2.Components/components-buttons';
 @import './styles/2.Components/components-footer';
+@import './styles/2.Components/components-blue-section';
+@import './styles/2.Components/components-intro-section';
 
 @import './styles/1.Utilities/utilities-uppercase';
 @import './styles/1.Utilities/utilities-arrow-width';
@@ -31,5 +35,9 @@
 @import './styles/1.Utilities/utilities-responsive-order';
 @import './styles/1.Utilities/utilities-desktop-hidden';
 @import './styles/1.Utilities/utilities-horizontal-line';
+@import './styles/1.Utilities/utilities-dotted-panel-icons';
+@import './styles/1.Utilities/utilities-extra-btn-padding';
+@import './styles/1.Utilities/utilities-small-vertical-border';
+@import './styles/1.Utilities/utilities-details-text';
 
 

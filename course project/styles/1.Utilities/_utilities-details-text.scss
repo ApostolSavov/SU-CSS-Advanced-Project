@@ -1,0 +1,16 @@
+.u-details{
+    grid-column: 2;
+    font-weight: bold;
+
+    &--grey-text{
+        grid-row: 1;
+    }
+
+    &--orange-text{
+        font-family: 'Montserrat', sans-serif;
+        grid-row: 2;
+        color: $secondary-800;
+        font-size: 20px;
+        font-style: normal;
+    }
+}

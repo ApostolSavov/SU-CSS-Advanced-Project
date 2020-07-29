@@ -1,0 +1,28 @@
+.c-blue-section {
+    height: 302px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &__yellow-label {
+        position: absolute;
+        top: 64px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: $secondary-500;
+        border-radius: 4px;
+        box-shadow: $dp1-shadow;
+        color: $generic-white;
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+
+    &__heading{
+        color: $generic-white;
+        max-width: 650px;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 600;
+    }
+}
