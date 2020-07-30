@@ -1,9 +1,9 @@
-.c-intro-section{
+.c-intro-section {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 124px repeat(2, min-content);
 
-    &__floating-panel{
+    &__floating-panel {
         background-image: url('./assets/icons/dotted-panel-horizontal.svg');
         background-repeat: no-repeat;
         background-position: center center;
@@ -20,7 +20,7 @@
         align-items: center;
     }
 
-    &__details{
+    &__details {
         display: grid;
         grid-template-columns: repeat(2, max-content);
         grid-template-rows: repeat(2, 1fr);
@@ -28,5 +28,50 @@
         column-gap: 24px;
         row-gap: 6px;
     }
-}
 
+    &__video-panel {
+        position: relative;
+
+        &::after {
+            content: url('./assets/images/play-button.png');
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        img {
+            width: 440px;
+        }
+    }
+
+    %common-skills-and-whom {
+        display: grid;
+        grid-template-columns: 32px 488px;
+        align-content: center;
+        column-gap: 32px;
+        row-gap: 16px;
+
+        h2 {
+            font-weight: 600;
+        }
+
+        img{
+            align-self: start;
+        }
+    }
+
+    &__for-whom-text {
+        @extend %common-skills-and-whom;
+
+        grid-template-rows: 36px 60px;
+        align-items: center;
+    }
+
+    &__new-skills-text {
+        @extend %common-skills-and-whom;
+
+        grid-template-rows: 72px 80px;
+        align-items: start;
+    }
+}

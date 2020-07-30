@@ -1,6 +1,6 @@
-.o-main-container{
+.o-main-container {
 
-    &::before{
+    &::before {
         content: '';
         position: absolute;
         background-color: $blue-400;
@@ -10,17 +10,35 @@
         right: 0;
     }
 
-    .o-main-grid-container{
+    .o-main-grid-container {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, min-content) ;
+        grid-template-rows: repeat(4, min-content);
     }
 }
 
-.o-details-container{
+.o-details-container {
     display: grid;
     grid-template-columns: repeat(7, min-content);
     grid-template-rows: 1fr;
     column-gap: 32px;
     align-items: center;
+}
+
+.o-content-wrapper {
+    display: grid;
+    align-items: center;
+
+    &--different-items {
+        grid-template-columns: 739px 440px;
+        grid-template-rows: 1fr;
+        column-gap: 111px;
+    }
+
+    &--equal-items {
+        grid-template-columns: 1fr min-content 1fr;
+        grid-template-rows: 230px;
+        column-gap: 88px;
+        align-items: center;
+    }
 }
