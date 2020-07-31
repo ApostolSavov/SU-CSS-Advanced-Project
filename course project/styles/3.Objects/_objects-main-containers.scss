@@ -27,12 +27,19 @@
 
 .o-content-wrapper {
     display: grid;
-    align-items: center;
+    align-content: center;
 
     &--different-items {
-        grid-template-columns: 739px 440px;
-        grid-template-rows: 1fr;
-        column-gap: 111px;
+        grid-template-columns: 735px 440px;
+        grid-template-rows: min-content;
+        column-gap: 100px;
+        align-items: center;
+
+        &--shorter {
+            grid-template-columns: 608px 1fr;
+            grid-template-rows: min-content;
+            column-gap: 100px;
+        }
     }
 
     &--equal-items {
@@ -40,5 +47,12 @@
         grid-template-rows: 230px;
         column-gap: 88px;
         align-items: center;
+
+        &--extra-height {
+            grid-template-columns: 1fr min-content 1fr;
+            grid-template-rows: 334px;
+            column-gap: 32px;
+            align-items: center;
+        }
     }
 }

@@ -45,22 +45,6 @@
         }
     }
 
-    %common-skills-and-whom {
-        display: grid;
-        grid-template-columns: 32px 488px;
-        align-content: center;
-        column-gap: 32px;
-        row-gap: 16px;
-
-        h2 {
-            font-weight: 600;
-        }
-
-        img{
-            align-self: start;
-        }
-    }
-
     &__for-whom-text {
         @extend %common-skills-and-whom;
 

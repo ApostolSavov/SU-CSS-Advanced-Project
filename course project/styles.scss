@@ -3,6 +3,7 @@
 @import './styles/7.Settings/settings-colors';
 @import './styles/7.Settings/settings-animations';
 @import './styles/7.Settings/settings-shadows';
+@import './styles/7.Settings/settings-placeholders';
 
 @import './styles/5.Generic/generic-normalize';
 
@@ -25,6 +26,7 @@
 @import './styles/2.Components/components-blue-section';
 @import './styles/2.Components/components-intro-section';
 @import './styles/2.Components/components-yellow-section';
+@import './styles/2.Components/components-other-info-section';
 
 @import './styles/1.Utilities/utilities-uppercase';
 @import './styles/1.Utilities/utilities-arrow-width';
@@ -41,4 +43,6 @@
 @import './styles/1.Utilities/utilities-small-vertical-border';
 @import './styles/1.Utilities/utilities-details-text';
 @import './styles/1.Utilities/utilities-vertical-yellow-dots';
+@import './styles/1.Utilities/utilities-bold';
+@import './styles/1.Utilities/utilities-link-in-text';
 
