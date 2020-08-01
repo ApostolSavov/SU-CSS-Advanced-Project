@@ -23,10 +23,15 @@
 @import './styles/2.Components/components-header';
 @import './styles/2.Components/components-buttons';
 @import './styles/2.Components/components-footer';
-@import './styles/2.Components/components-blue-section';
-@import './styles/2.Components/components-intro-section';
-@import './styles/2.Components/components-yellow-section';
-@import './styles/2.Components/components-other-info-section';
+@import './styles/2.Components/page-1/components-blue-section';
+@import './styles/2.Components/page-1/components-intro-section';
+@import './styles/2.Components/page-1/components-yellow-section';
+@import './styles/2.Components/page-1/components-other-info-section';
+@import './styles/2.Components/page-2/components-yellow-intro-section';
+@import './styles/2.Components/page-2/components-main-tutors-section';
+@import './styles/2.Components/page-2/components-other-tutors-section';
+@import './styles/2.Components/page-2/components-apply-section';
+@import './styles/2.Components/page-2/components-horizontal-green-dots';
 
 @import './styles/1.Utilities/utilities-uppercase';
 @import './styles/1.Utilities/utilities-arrow-width';
@@ -45,4 +50,5 @@
 @import './styles/1.Utilities/utilities-vertical-yellow-dots';
 @import './styles/1.Utilities/utilities-bold';
 @import './styles/1.Utilities/utilities-link-in-text';
+@import './styles/1.Utilities/utilities-image-hover-blur';
 
