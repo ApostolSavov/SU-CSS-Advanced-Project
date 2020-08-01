@@ -55,4 +55,10 @@
             align-items: center;
         }
     }
+
+    &--two-equal-containers{
+        grid-template-columns: repeat(2, min-content);
+        grid-template-rows: 1fr;
+        column-gap: 32px;
+    }
 }

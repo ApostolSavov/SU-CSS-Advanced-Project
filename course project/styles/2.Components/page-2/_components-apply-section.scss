@@ -1,0 +1,74 @@
+.c-apply-section {
+    min-height: 412px;
+    position: relative;
+    display: grid;
+    place-items: center;
+    padding: 64px 0 128px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        background-color: $blue-300;
+        border-top: 12px solid $blue-200;
+        width: 100vw;
+        left: -webkit-calc((100vw - 100%)/(-2));
+        right: -webkit-calc((100vw - 100%)/(-2));
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    &__application-form {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 108px 52px;
+        row-gap: 48px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__text {
+        display: grid;
+        grid-template-columns: 850px;
+        grid-template-rows: 44px 40px;
+        row-gap: 24px;
+        text-align: center;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        color: $generic-white;
+    }
+
+    &__form-fields{
+        display: grid;
+        grid-template-columns: repeat(3, 228px) min-content;
+        grid-template-rows: 1fr;
+        column-gap: 32px;
+        align-items: center;
+
+        .c-btn{
+            padding:14px 32px;
+            font-weight: 800;
+            margin-left: 16px;
+        }
+
+    }
+
+    &__input-field{
+        height: 52px;
+        width: 100%;
+        border-radius: 6px;
+        border: 1px solid $generic-white;
+        background-color: transparent;
+        color: $generic-white;
+        padding: 16px;
+
+        &::placeholder{
+            color: $generic-white;
+        }
+
+        &:focus{
+            outline: none;
+        }
+    }
+}

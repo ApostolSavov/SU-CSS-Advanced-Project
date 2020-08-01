@@ -1,0 +1,43 @@
+.c-other-info-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 256px 334px;
+    row-gap: 106px;
+    margin-top: 29px;
+    margin-bottom: 148px;
+
+    &__certificate-text {
+        @extend %common-skills-and-whom;
+        grid-template-rows: 36px 40px;
+        align-items: center;
+    }
+
+    &__certificate-panel {
+        display: flex;
+        justify-content: center;
+
+        &--image {
+            border-radius: 12px;
+            background-color: $grey-300;
+            width: 363px;
+            height: 256px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__location-text {
+        @extend %common-skills-and-whom;
+        align-items: center;
+        grid-template-columns: 32px 544px;
+        grid-template-rows: 72px 220px;
+    }
+
+    &__more-info-text {
+        @extend %common-skills-and-whom;
+        align-items: center;
+        grid-template-columns: 32px 544px;
+        grid-template-rows: 36px 280px;
+    }
+}

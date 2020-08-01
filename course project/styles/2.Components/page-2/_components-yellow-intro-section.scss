@@ -1,0 +1,37 @@
+.c-yellow-intro-section {
+    min-height: 256px;
+    padding: 64px 295px;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        background-color: $secondary-600;
+        width: 100vw;
+        left: -webkit-calc((100vw - 100%)/(-2));
+        right: -webkit-calc((100vw - 100%)/(-2));
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+
+    }
+
+    &__text {
+        display: grid;
+        grid-template-columns: 850px;
+        grid-template-rows: repeat(2, max-content);
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        color: $generic-white;
+    }
+
+    &__heading {
+        margin: 0 0 24px;
+    }
+
+    &__paragraph {
+        text-align: center;
+    }
+}

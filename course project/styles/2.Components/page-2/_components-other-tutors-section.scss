@@ -1,0 +1,40 @@
+.c-other-tutors-section {
+    min-height: 1472px;
+    padding: 96px 0 128px;
+
+    &__grid-list {
+        display: grid;
+        grid-template-columns: repeat(4, 242px);
+        grid-template-rows: repeat(4, 264px);
+        gap: 64px 32px;
+        align-content: center;
+        justify-content: center;
+
+    }
+
+    &__grid-item {
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        justify-items: center;
+    }
+
+    &__photo {
+        width: 188px;
+        height: 188px;
+        border-radius: 50%;
+        position: relative;
+    }
+
+    &__name {
+        color: $primary-300;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 24px 0 8px;
+    }
+
+    &__title {
+        color: $grey-400;
+        font-size: 14px;
+
+    }
+}
