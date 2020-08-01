@@ -1,5 +1,5 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @font-face {
   font-family: 'LatoWeb';
   src: url("./fonts/Lato-Regular.woff2") format("woff2"), url("./fonts/Lato-Medium.woff2") format("woff2"), url("./fonts/Lato-Bold.woff2") format("woff2"), url("./fonts/Lato-Thin.woff2") format("woff2"), url("./fonts/Lato-Heavy.woff2") format("woff2"), url("./fonts/Lato-HairlineItalic.woff2") format("woff2"), url("./fonts/Lato-Hairline.woff2") format("woff2"), url("./fonts/Lato-Italic.woff2") format("woff2"), url("./fonts/Lato-HeavyItalic.woff2") format("woff2"), url("./fonts/Lato-BoldItalic.woff2") format("woff2"), url("./fonts/Lato-BlackItalic.woff2") format("woff2"), url("./fonts/Lato-Black.woff2") format("woff2"), url("./fonts/Lato-Light.woff2") format("woff2"), url("./fonts/Lato-LightItalic.woff2") format("woff2"), url("./fonts/Lato-MediumItalic.woff2") format("woff2"), url("./fonts/Lato-Semibold.woff2") format("woff2"), url("./fonts/Lato-SemiboldItalic.woff2") format("woff2"), url("./fonts/Lato-ThinItalic.woff2") format("woff2");
@@ -498,6 +498,16 @@ span {
           align-items: center;
 }
 
+.o-content-wrapper--two-equal-containers {
+  -ms-grid-columns: (min-content)[2];
+      grid-template-columns: repeat(2, -webkit-min-content);
+      grid-template-columns: repeat(2, min-content);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -webkit-column-gap: 32px;
+          column-gap: 32px;
+}
+
 .c-header {
   position: -webkit-sticky;
   position: sticky;
@@ -990,6 +1000,254 @@ span {
       grid-template-rows: 36px 280px;
 }
 
+.c-yellow-intro-section {
+  min-height: 256px;
+  padding: 64px 295px;
+  position: relative;
+}
+
+.c-yellow-intro-section::after {
+  content: '';
+  position: absolute;
+  background-color: #FFB402;
+  width: 100vw;
+  left: -webkit-calc((100vw - 100%)/(-2));
+  right: -webkit-calc((100vw - 100%)/(-2));
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.c-yellow-intro-section__text {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 850px;
+      grid-template-columns: 850px;
+  -ms-grid-rows: (max-content)[2];
+      grid-template-rows: repeat(2, -webkit-max-content);
+      grid-template-rows: repeat(2, max-content);
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: #FFFFFF;
+}
+
+.c-yellow-intro-section__heading {
+  margin: 0 0 24px;
+}
+
+.c-yellow-intro-section__paragraph {
+  text-align: center;
+}
+
+.c-main-tutors-section {
+  min-height: 548px;
+  padding: 96px 0;
+}
+
+.c-main-tutors-section__tutor-info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 188px 409px;
+      grid-template-columns: 188px 409px;
+  -ms-grid-rows: 52px 280px;
+      grid-template-rows: 52px 280px;
+  -webkit-column-gap: 32px;
+          column-gap: 32px;
+  row-gap: 24px;
+}
+
+.c-main-tutors-section__photo {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.c-main-tutors-section__names h4 {
+  margin: 0 0 8px;
+  color: #41BEAD;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.c-main-tutors-section__names span {
+  color: #B2B2B2;
+  font-size: 14px;
+}
+
+.c-main-tutors-section__bio {
+  margin: 0;
+}
+
+.c-other-tutors-section {
+  min-height: 1472px;
+  padding: 96px 0 128px;
+}
+
+.c-other-tutors-section__grid-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (242px)[4];
+      grid-template-columns: repeat(4, 242px);
+  -ms-grid-rows: (264px)[4];
+      grid-template-rows: repeat(4, 264px);
+  gap: 64px 32px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.c-other-tutors-section__grid-item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[3];
+      grid-template-rows: repeat(3, auto);
+  justify-items: center;
+}
+
+.c-other-tutors-section__photo {
+  width: 188px;
+  height: 188px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.c-other-tutors-section__name {
+  color: #41BEAD;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 24px 0 8px;
+}
+
+.c-other-tutors-section__title {
+  color: #B2B2B2;
+  font-size: 14px;
+}
+
+.c-apply-section {
+  min-height: 412px;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding: 64px 0 128px;
+}
+
+.c-apply-section::after {
+  content: '';
+  position: absolute;
+  background-color: #66B9F8;
+  border-top: 12px solid #92CDFB;
+  width: 100vw;
+  left: -webkit-calc((100vw - 100%)/(-2));
+  right: -webkit-calc((100vw - 100%)/(-2));
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.c-apply-section__application-form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 108px 52px;
+      grid-template-rows: 108px 52px;
+  row-gap: 48px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.c-apply-section__text {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 850px;
+      grid-template-columns: 850px;
+  -ms-grid-rows: 44px 40px;
+      grid-template-rows: 44px 40px;
+  row-gap: 24px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #FFFFFF;
+}
+
+.c-apply-section__form-fields {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (228px)[3] min-content;
+      grid-template-columns: repeat(3, 228px) -webkit-min-content;
+      grid-template-columns: repeat(3, 228px) min-content;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -webkit-column-gap: 32px;
+          column-gap: 32px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-apply-section__form-fields .c-btn {
+  padding: 14px 32px;
+  font-weight: 800;
+  margin-left: 16px;
+}
+
+.c-apply-section__input-field {
+  height: 52px;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #FFFFFF;
+  background-color: transparent;
+  color: #FFFFFF;
+  padding: 16px;
+}
+
+.c-apply-section__input-field::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+
+.c-apply-section__input-field:-ms-input-placeholder {
+  color: #FFFFFF;
+}
+
+.c-apply-section__input-field::-ms-input-placeholder {
+  color: #FFFFFF;
+}
+
+.c-apply-section__input-field::placeholder {
+  color: #FFFFFF;
+}
+
+.c-apply-section__input-field:focus {
+  outline: none;
+}
+
+.c-horizontal-green-dots {
+  height: 10px;
+  width: 100%;
+}
+
 .u-uppercase {
   text-transform: uppercase;
 }
@@ -1132,5 +1390,48 @@ span {
   text-decoration: underline;
   -webkit-text-decoration-color: #FF9100;
           text-decoration-color: #FF9100;
+}
+
+.u-image-hover-blur {
+  position: absolute;
+  height: 172px;
+  width: 172px;
+  top: 8px;
+  bottom: 8px;
+  left: 8px;
+  right: 8px;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.u-image-hover-blur a {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  opacity: 0;
+  border-radius: 50%;
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
+  -webkit-transition: background-color 0.5s ease-out, opacity 0.5s ease-out, -webkit-backdrop-filter 0.25s;
+  transition: background-color 0.5s ease-out, opacity 0.5s ease-out, -webkit-backdrop-filter 0.25s;
+  transition: background-color 0.5s ease-out, opacity 0.5s ease-out, backdrop-filter 0.25s;
+  transition: background-color 0.5s ease-out, opacity 0.5s ease-out, backdrop-filter 0.25s, -webkit-backdrop-filter 0.25s;
+}
+
+.u-image-hover-blur a:hover {
+  background-color: #FF9100;
+  opacity: 0.8;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+
+.u-image-hover-blur a:hover::before {
+  content: url("./assets/other/tutor-hover-text.svg");
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 /*# sourceMappingURL=styles.css.map */
