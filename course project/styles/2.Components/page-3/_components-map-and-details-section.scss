@@ -1,0 +1,55 @@
+.c-map-and-details-section {
+    min-height: 426px;
+    position: relative;
+
+    &__details-panel {
+        height: 382px;
+        max-width: 519px;
+        box-shadow: $dp1-shadow;
+        background-color: $generic-white;
+        border-radius: 12px;
+        position: absolute;
+        bottom: -84px;
+        left: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, min-content) 1fr;
+        justify-items: left;
+        row-gap: 14px;
+        column-gap: 24px;
+        padding: 32px;
+    }
+
+    &__address {
+        @extend %third-page-details-panel;
+        grid-template-rows: 30px 60px;
+
+
+    }
+
+    &__hours {
+        @extend %third-page-details-panel;
+        grid-template-columns: 88px 103px;
+        grid-template-rows: 30px repeat(2, 38px);
+        align-items: top;
+
+        h4 {
+            grid-column: 1/3;
+        }
+    }
+
+    &__contacts {
+        @extend %third-page-details-panel;
+        grid-template-rows: 30px repeat(2, 19px);
+
+    }
+
+    .c-btn {
+        grid-row: 3/4;
+        grid-column: 1/3;
+        align-self: end;
+        justify-self: center;
+        margin-top: 18px;
+        font-size: 14px;
+    }
+}
