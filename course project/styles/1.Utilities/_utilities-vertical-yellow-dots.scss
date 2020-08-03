@@ -1,9 +1,20 @@
-.u-vertical-yellow-dots{
+.u-vertical-yellow-dots {
     width: 10px;
     align-self: end;
 
-    &--long{
+    &--long {
         width: 10px;
         align-self: center;
+
+        @include small-desktop {
+            width: 334px;
+            height: 10px;
+            justify-self: center;
+        }
+    }
+
+    @include small-desktop {
+        width: 334px;
+        height: 10px;
     }
 }

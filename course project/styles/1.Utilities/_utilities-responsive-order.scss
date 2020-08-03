@@ -1,5 +1,5 @@
 .u-order {
-    @include iphone-8 {
+    @include phone {
         &--1 {
             order: 1;
         }

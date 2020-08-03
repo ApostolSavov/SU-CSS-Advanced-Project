@@ -7,6 +7,17 @@
     grid-template-rows: 37px 60px 270px;
     row-gap: 24px;
     column-gap: 137px;
+    align-content: center;
+
+    @include small-desktop {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3, min-content);
+    }
+
+    @include tablet{
+        height: 757px;
+        row-gap: 32px;
+    }
 
     &::after {
         content: '';
@@ -21,11 +32,21 @@
         bottom: 0;
         z-index: -1;
 
-        @include general-responsive{
+        @include small-desktop {
             transform: none;
             left: 0;
             right: 0;
             width: auto;
+        }
+
+        @include tablet{
+            background-image: url('./assets/images/big-yellow-panel-responsive.svg');
+            height: 763px;
+            transform: none;
+            left: 0;
+            right: 0;
+            width: auto;
+            background-repeat: repeat-x;
         }
     }
 
@@ -35,7 +56,11 @@
         margin: 0;
         position: relative;
 
-        &::before{
+        @include small-desktop {
+            left: 55px;
+        }
+
+        &::before {
             content: url('./assets/icons/icon-book.svg');
             position: absolute;
             top: 0;
@@ -61,31 +86,35 @@
         align-self: end;
     }
 
-    &__select-menu{
+    &__select-menu {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: min-content repeat(4, 50px);
+        grid-template-rows: min-content repeat(4, min-content);
         row-gap: 16px;
 
-        h4{
+        h4 {
             margin: 0;
         }
     }
 
-    &__select-field{
+    &__select-field {
         border-radius: 6px;
-        padding: 14px;
+        padding: 14px 56px 14px 14px;
         border: none;
-        appearance: none;
+        background-color: $generic-white;
         background-image: url('./assets/other/select-arrow.svg');
         background-repeat: no-repeat;
         background-position: right;
         width: 100%;
-        pointer-events: none;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        font-weight: bold;
 
-        &:focus{
-            outline: none;
+        p {
+            margin: 0;
+            line-height: 22px;
         }
     }
-    
 }

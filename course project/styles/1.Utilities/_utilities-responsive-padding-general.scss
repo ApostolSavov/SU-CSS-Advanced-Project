@@ -1,0 +1,6 @@
+.u-responsive-padding-general {
+    @include small-desktop {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

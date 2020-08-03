@@ -3,4 +3,9 @@
     height: 24px;
     background-color: $grey-100;
     vertical-align: middle;
+
+    @include small-desktop{
+        width: 24px;
+        height: 2px;
+    }
 }

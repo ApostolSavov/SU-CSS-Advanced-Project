@@ -1,4 +1,7 @@
 .u-arrow-width{
     max-width: 12px;
 
+    @include phone{
+        max-width: 13px;
+    }
 }

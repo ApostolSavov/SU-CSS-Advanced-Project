@@ -1,7 +1,13 @@
 .u-desktop-hidden{
-    display: none;
+    display: none !important;
 
-    @include iphone-8{
-        display: inline-block;
+    @include phone{
+        display: inline-block !important;
+    }
+
+    &--small-desktop{
+        @include small-desktop{
+            display: inline-block !important;
+        }
     }
 }

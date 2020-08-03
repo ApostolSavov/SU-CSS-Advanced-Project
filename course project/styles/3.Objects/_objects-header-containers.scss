@@ -12,13 +12,17 @@
 .o-logo-container{
     @extend %flex-center;
     justify-content: space-between;
+
+    @include phone{
+        justify-content: left;
+    }
 }
 
 .o-magnifying-glass-container{
     @extend %flex-center;
     justify-content: center;
 
-    @include for-phone {
+    @include tablet {
         display: none;
     }
 }

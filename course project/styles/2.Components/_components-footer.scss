@@ -5,18 +5,18 @@
     width: 100%;
     padding: 64px 0;
 
-    @include general-responsive{
+    @include small-desktop{
         height: auto;
     }
 
-    @include iphone-8{
+    @include phone{
         padding: 52px 20px 32px;
     }
 
     &__alien-image {
         position: relative;
 
-        @include general-responsive{
+        @include small-desktop{
             display: none;
         }
 
@@ -39,6 +39,10 @@
             white-space: nowrap;
             margin-top: 0;
             line-height: 22px;
+            font-family: "LatoWeb", sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            
         }
     }
 
@@ -47,7 +51,7 @@
         flex-flow: column wrap;
         height: 162px;
 
-        @include general-responsive{
+        @include small-desktop{
             height: auto;
         }
     }

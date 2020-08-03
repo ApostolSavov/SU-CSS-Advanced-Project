@@ -1,0 +1,33 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'LatoWeb';
+    src: url('./fonts/Lato-Regular.woff2') format('woff2'),
+        url('./fonts/Lato-Medium.woff2') format('woff2'),
+        url('./fonts/Lato-Bold.woff2') format('woff2'),
+        url('./fonts/Lato-Thin.woff2') format('woff2'),
+        url('./fonts/Lato-Heavy.woff2') format('woff2'),
+        url('./fonts/Lato-HairlineItalic.woff2') format('woff2'),
+        url('./fonts/Lato-Hairline.woff2') format('woff2'),
+        url('./fonts/Lato-Italic.woff2') format('woff2'),
+        url('./fonts/Lato-HeavyItalic.woff2') format('woff2'),
+        url('./fonts/Lato-BoldItalic.woff2') format('woff2'),
+        url('./fonts/Lato-BlackItalic.woff2') format('woff2'),
+        url('./fonts/Lato-Black.woff2') format('woff2'),
+        url('./fonts/Lato-Light.woff2') format('woff2'),
+        url('./fonts/Lato-LightItalic.woff2') format('woff2'),
+        url('./fonts/Lato-MediumItalic.woff2') format('woff2'),
+        url('./fonts/Lato-Semibold.woff2') format('woff2'),
+        url('./fonts/Lato-SemiboldItalic.woff2') format('woff2'),
+        url('./fonts/Lato-ThinItalic.woff2') format('woff2');
+}
+
+h1{
+    font-size: 36px;
+}
+
+h2{
+    font-size: 30px;
+}

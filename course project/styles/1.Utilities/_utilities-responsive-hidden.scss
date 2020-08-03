@@ -1,5 +1,11 @@
 .u-responsive-hidden{
-    @include iphone-8{
-        display: none;
+    @include phone{
+        display: none !important;
+    }
+}
+
+.u-responsive-hidden--small-desktop{
+    @include small-desktop{
+        display: none !important;
     }
 }

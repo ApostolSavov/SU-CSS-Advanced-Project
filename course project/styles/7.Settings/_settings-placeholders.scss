@@ -1,0 +1,43 @@
+%common-skills-and-whom {
+    display: grid;
+    grid-template-columns: 32px 488px;
+    align-content: center;
+    column-gap: 32px;
+    row-gap: 16px;
+
+    h2 {
+
+        font-weight: 600;
+    }
+
+    img{
+        align-self: start;
+    }
+
+    @include small-desktop{
+        grid-template-columns: 32px 1fr;
+        column-gap: 18px;
+        row-gap: 16px;
+    }
+}
+
+%third-page-details-panel{
+    display: grid;
+    column-gap: 24px;
+    row-gap: 12px;
+    justify-items: left;
+
+    h4{
+        margin: 0 0 6px;
+        line-height: 24px;
+        color: $primary-300;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    p {
+        margin: 0;
+        line-height: 20px;
+
+    }
+}
