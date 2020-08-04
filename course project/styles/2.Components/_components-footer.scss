@@ -24,11 +24,25 @@
             content: '';
             width: 220px;
             height: 403px;
-            background-image: url('./assets/images/orange-alien.svg');
+            background-image: url('./assets/images/orange-alien.png');
             background-repeat: no-repeat;
             position: absolute;
-            bottom: -43px;
+            bottom: -42px;
             left: 0;
+        }
+
+        &::before{
+            content: '';
+            width: 63px;
+            height: 63px;
+            background-image: url('./assets/images/alien-eye.png');
+            background-repeat: no-repeat;
+            position: absolute;
+            bottom: 250px;
+            left: 82px;
+            z-index: 5;
+            transform: translate(0px, 0px);
+            animation: alien-eye 6s ease-in-out infinite alternate-reverse;
         }
     }
 
@@ -59,6 +73,7 @@
     &__item {
         line-height: 19px;
         padding-bottom: 12px;
+        display: flex;
     }
 
     &__link {
@@ -67,10 +82,14 @@
 
     a {
         color: $grey-200;
+        transform: translateX(0px);
+        transition: color 0.5s ease-out, transform 0.5s ease-out;
 
-        &:hover {
+        &:hover{
             color: $primary-300;
+            transform: translateX(5px);
         }
+
     }
 
 }

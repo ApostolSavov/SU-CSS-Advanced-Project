@@ -9,6 +9,9 @@
     font-weight: 800;
     background-color: $generic-white;
     z-index: 10;
+    opacity: 0;
+    transform: translateY(-74px);
+    animation: start-appear-move 1s ease-out forwards;
 
     @include small-desktop{
         padding: 0 20px;
@@ -44,10 +47,20 @@
 
         &__link {
             color: $grey-700;
+            display: flex;
+            font-weight: bold;
+            transform: translateY(0px);
+            transition: transform 0.5s ease-out;
 
             &:hover {
                 color: $secondary-800;
+                transform: translateY(2px);
             }
+        }
+
+        &__letter{
+            @include gradual-color-shift($grey-700, $secondary-800);
+            color: $grey-700;
         }
     }
 }

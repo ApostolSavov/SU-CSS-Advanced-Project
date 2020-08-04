@@ -1,9 +1,9 @@
 @import './styles/7.Settings/settings-breakpoints';
 @import './styles/7.Settings/settings-typography';
 @import './styles/7.Settings/settings-colors';
-@import './styles/7.Settings/settings-animations';
 @import './styles/7.Settings/settings-shadows';
 @import './styles/7.Settings/settings-placeholders';
+@import './styles/7.Settings/settings-animations';
 
 @import './styles/5.Generic/generic-normalize';
 
@@ -56,4 +56,6 @@
 @import './styles/1.Utilities/utilities-image-hover-blur';
 @import './styles/1.Utilities/utilities-orange-text';
 @import './styles/1.Utilities/utilities-responsive-padding-general';
+@import './styles/1.Utilities/utilities-gradual-color-shift';
+
 

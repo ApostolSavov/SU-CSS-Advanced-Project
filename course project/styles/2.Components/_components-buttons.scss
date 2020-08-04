@@ -5,10 +5,17 @@
     padding: 10px 22px;
     border-radius: 100px;
     box-shadow: $dp4-shadow;
+    transform: scale(1);
 
     &--orange-filled{
         background-color: $secondary-800;
         color: $generic-white;
+        transition: box-shadow 0.3s ease-out, transform 0.3s ease-out;
+
+        &:hover{
+            box-shadow: $dp6-shadow;
+            transform: scale(1.03);
+        }
 
     }
 
@@ -19,5 +26,11 @@
         padding: 14px 32px;
         font-weight: 800;
         box-shadow: none;
+        transition: background-color 0.3s ease-out, color 0.3s ease-out;
+
+        &:hover{
+            background-color: $secondary-800;
+            color: $generic-white;
+        }
     }
 }

@@ -25,6 +25,8 @@
         align-items: center;
         align-content: center;
         color: $generic-white;
+        opacity: 0;
+        animation: start-appear-only-opacity 2s ease-out 1s forwards;
     }
 
     &__heading {

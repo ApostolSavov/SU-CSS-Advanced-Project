@@ -1,0 +1,22 @@
+.u-gradual-color-shift {
+
+    &:hover {
+
+        .c-nav__letter {
+            animation-name: gradual-color-shift;
+            animation-duration: 0.5s;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
+
+            @for $i from 1 through 20 {
+                &:nth-child(#{$i}) {
+                    animation-delay: 0.03s * $i;
+                }
+            }
+        }
+    }
+
+    .c-nav__letter {
+        animation: gradual-color-shift-out 0.5s ease-out;
+    }
+}
