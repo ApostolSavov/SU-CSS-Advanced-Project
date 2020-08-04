@@ -9,6 +9,11 @@
     justify-items: center;
     align-items: center;
 
+    @include small-desktop{
+        grid-template-columns: 100%;
+        grid-template-rows: 36px min-content;
+    }
+
     &::after {
         content: '';
         position: absolute;
@@ -26,6 +31,14 @@
         grid-template-columns: 409px repeat(2, 407px);
         grid-template-rows: 1fr;
         column-gap: 33px;
+
+        @include small-desktop{
+            grid-template-columns: 80%;
+            grid-template-rows: min-content;
+            justify-content: center;
+            justify-items: left;
+            row-gap: 32px;
+        }
     }
 
     &__heading {
@@ -42,14 +55,27 @@
 
         &--metro{
             grid-template-rows: 32px repeat(2, 40px);
+
+            @include small-desktop{
+                grid-template-rows: 32px repeat(2, min-content);
+            }
         }
 
         &--bus {
             grid-template-rows: 32px repeat(2, 40px) repeat(2, 60px);
+
+            @include small-desktop{
+                grid-template-rows: 32px repeat(4, min-content);
+            }
+
         }
 
         &--mini-bus{
             grid-template-rows: 32px repeat(2, 40px);
+
+            @include small-desktop{
+                grid-template-rows: 32px repeat(2, min-content);
+            }
         }
     }
 

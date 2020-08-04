@@ -1,18 +1,5 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@font-face {
-  font-family: 'LatoWeb';
-  src: url("./fonts/Lato-Regular.woff2") format("woff2"), url("./fonts/Lato-Medium.woff2") format("woff2"), url("./fonts/Lato-Bold.woff2") format("woff2"), url("./fonts/Lato-Thin.woff2") format("woff2"), url("./fonts/Lato-Heavy.woff2") format("woff2"), url("./fonts/Lato-HairlineItalic.woff2") format("woff2"), url("./fonts/Lato-Hairline.woff2") format("woff2"), url("./fonts/Lato-Italic.woff2") format("woff2"), url("./fonts/Lato-HeavyItalic.woff2") format("woff2"), url("./fonts/Lato-BoldItalic.woff2") format("woff2"), url("./fonts/Lato-BlackItalic.woff2") format("woff2"), url("./fonts/Lato-Black.woff2") format("woff2"), url("./fonts/Lato-Light.woff2") format("woff2"), url("./fonts/Lato-LightItalic.woff2") format("woff2"), url("./fonts/Lato-MediumItalic.woff2") format("woff2"), url("./fonts/Lato-Semibold.woff2") format("woff2"), url("./fonts/Lato-SemiboldItalic.woff2") format("woff2"), url("./fonts/Lato-ThinItalic.woff2") format("woff2");
-}
-
-h1 {
-  font-size: 36px;
-}
-
-h2 {
-  font-size: 30px;
-}
-
 .c-intro-section__for-whom-text, .c-intro-section__new-skills-text, .c-other-info-section__certificate-text, .c-other-info-section__location-text, .c-other-info-section__more-info-text {
   display: -ms-grid;
   display: grid;
@@ -422,6 +409,19 @@ Add the correct display in Chrome and Safari.
 */
 summary {
   display: list-item;
+}
+
+@font-face {
+  font-family: 'LatoWeb';
+  src: url("./fonts/Lato-Regular.woff2") format("woff2"), url("./fonts/Lato-Medium.woff2") format("woff2"), url("./fonts/Lato-Bold.woff2") format("woff2"), url("./fonts/Lato-Thin.woff2") format("woff2"), url("./fonts/Lato-Heavy.woff2") format("woff2"), url("./fonts/Lato-HairlineItalic.woff2") format("woff2"), url("./fonts/Lato-Hairline.woff2") format("woff2"), url("./fonts/Lato-Italic.woff2") format("woff2"), url("./fonts/Lato-HeavyItalic.woff2") format("woff2"), url("./fonts/Lato-BoldItalic.woff2") format("woff2"), url("./fonts/Lato-BlackItalic.woff2") format("woff2"), url("./fonts/Lato-Black.woff2") format("woff2"), url("./fonts/Lato-Light.woff2") format("woff2"), url("./fonts/Lato-LightItalic.woff2") format("woff2"), url("./fonts/Lato-MediumItalic.woff2") format("woff2"), url("./fonts/Lato-Semibold.woff2") format("woff2"), url("./fonts/Lato-SemiboldItalic.woff2") format("woff2"), url("./fonts/Lato-ThinItalic.woff2") format("woff2");
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
 }
 
 body {
@@ -1915,6 +1915,15 @@ span {
   padding: 32px;
 }
 
+@media (max-width: 900px) {
+  .c-map-and-details-section__details-panel {
+    height: auto;
+    -webkit-column-gap: 12px;
+            column-gap: 12px;
+    padding: 16px;
+  }
+}
+
 .c-map-and-details-section__address {
   -ms-grid-rows: 30px 60px;
       grid-template-rows: 30px 60px;
@@ -1928,6 +1937,16 @@ span {
   -webkit-box-align: top;
       -ms-flex-align: top;
           align-items: top;
+}
+
+@media (max-width: 900px) {
+  .c-map-and-details-section__hours {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (min-content)[5];
+        grid-template-rows: repeat(5, -webkit-min-content);
+        grid-template-rows: repeat(5, min-content);
+  }
 }
 
 .c-map-and-details-section__hours h4 {
@@ -1980,6 +1999,13 @@ span {
           align-items: center;
 }
 
+@media (max-width: 900px) {
+  .c-contact-section__form {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .c-contact-section__heading {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
@@ -2005,6 +2031,13 @@ span {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .c-contact-section__form-fields {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .c-contact-section__label--message {
@@ -2064,6 +2097,16 @@ span {
           align-items: center;
 }
 
+@media (max-width: 1290px) {
+  .c-location-section {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 36px min-content;
+        grid-template-rows: 36px -webkit-min-content;
+        grid-template-rows: 36px min-content;
+  }
+}
+
 .c-location-section::after {
   content: '';
   position: absolute;
@@ -2087,6 +2130,21 @@ span {
           column-gap: 33px;
 }
 
+@media (max-width: 1290px) {
+  .c-location-section__transport-types {
+    -ms-grid-columns: 80%;
+        grid-template-columns: 80%;
+    -ms-grid-rows: min-content;
+        grid-template-rows: -webkit-min-content;
+        grid-template-rows: min-content;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: left;
+    row-gap: 32px;
+  }
+}
+
 .c-location-section__heading {
   color: #41BEAD;
   margin: 0;
@@ -2107,14 +2165,38 @@ span {
       grid-template-rows: 32px repeat(2, 40px);
 }
 
+@media (max-width: 1290px) {
+  .c-location-section__transport--metro {
+    -ms-grid-rows: 32px (min-content)[2];
+        grid-template-rows: 32px repeat(2, -webkit-min-content);
+        grid-template-rows: 32px repeat(2, min-content);
+  }
+}
+
 .c-location-section__transport--bus {
   -ms-grid-rows: 32px (40px)[2] (60px)[2];
       grid-template-rows: 32px repeat(2, 40px) repeat(2, 60px);
 }
 
+@media (max-width: 1290px) {
+  .c-location-section__transport--bus {
+    -ms-grid-rows: 32px (min-content)[4];
+        grid-template-rows: 32px repeat(4, -webkit-min-content);
+        grid-template-rows: 32px repeat(4, min-content);
+  }
+}
+
 .c-location-section__transport--mini-bus {
   -ms-grid-rows: 32px (40px)[2];
       grid-template-rows: 32px repeat(2, 40px);
+}
+
+@media (max-width: 1290px) {
+  .c-location-section__transport--mini-bus {
+    -ms-grid-rows: 32px (min-content)[2];
+        grid-template-rows: 32px repeat(2, -webkit-min-content);
+        grid-template-rows: 32px repeat(2, min-content);
+  }
 }
 
 .c-location-section__sub-heading {

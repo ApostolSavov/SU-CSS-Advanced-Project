@@ -11,6 +11,10 @@
         gap: 32px;
         justify-items: center;
         align-items: center;
+
+        @include tablet{
+            grid-template-columns: 1fr;
+        }
     }
 
     &__heading {
@@ -29,6 +33,10 @@
         column-gap: 32px;
         row-gap: 30px;
         justify-content: center;
+
+        @include tablet{
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 
     &__label {
