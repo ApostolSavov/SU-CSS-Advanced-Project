@@ -3,6 +3,12 @@
     padding: 64px 295px;
     position: relative;
 
+    @include tablet{
+        width: 100%;
+        padding: 64px 20px;
+
+    }
+
     &::after {
         content: '';
         position: absolute;
@@ -13,6 +19,13 @@
         top: 0;
         bottom: 0;
         z-index: -1;
+
+        @include small-desktop {
+            transform: none;
+            left: 0;
+            right: 0;
+            width: auto;
+        }
 
     }
 
@@ -27,6 +40,10 @@
         color: $generic-white;
         opacity: 0;
         animation: start-appear-only-opacity 2s ease-out 1s forwards;
+
+        @include tablet{
+            grid-template-columns: 100%;
+        }
     }
 
     &__heading {

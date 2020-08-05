@@ -14,7 +14,6 @@
         background-position: center center;
         background-size: contain;
         position: relative;
-
         height: 124px;
         padding: 32px 64px;
         display: grid;
@@ -31,7 +30,6 @@
             background-position: center center;
             background-size: contain;
             position: relative;
-            top: -60px;
             height: 562px;
             width: 335px;
             padding: 46px 24px 24px;
@@ -46,8 +44,8 @@
             .c-btn {
                 padding: 16px 94px;
             }
-
         }
+
     }
 
     &__details {
@@ -71,7 +69,7 @@
             transition: transform 0.5s ease-out;
         }
 
-        &:hover::after{
+        &:hover::after {
             transform: translate(-50%, -50%) scale(1.2);
         }
 
@@ -115,10 +113,12 @@
         @include small-desktop {
             grid-template-rows: repeat(2, min-content);
 
-            img{
+            img {
                 grid-row: 1/2;
                 position: unset;
-            };
+            }
+
+            ;
 
             h2 {
                 margin: 0;

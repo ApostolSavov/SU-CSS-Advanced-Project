@@ -2,6 +2,11 @@
     min-height: 1472px;
     padding: 96px 0 128px;
 
+    @include tablet{
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
     &__grid-list {
         display: grid;
         grid-template-columns: repeat(4, 242px);
@@ -9,6 +14,12 @@
         gap: 64px 32px;
         align-content: center;
         justify-content: center;
+
+        @include small-desktop{
+            grid-template-columns: repeat( auto-fit, minmax(242px, 1fr) );
+            gap: 48px 32px;
+            
+        }
 
     }
 

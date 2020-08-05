@@ -15,3 +15,9 @@
     @content;
   }
 }
+
+@mixin custom-page-2 {
+  @media (max-width: 1320px) {
+    @content;
+  }
+}

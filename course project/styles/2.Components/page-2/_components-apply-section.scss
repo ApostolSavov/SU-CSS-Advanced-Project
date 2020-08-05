@@ -4,6 +4,11 @@
     display: grid;
     place-items: center;
     padding: 64px 0 128px;
+    width: 100%;
+
+    @include small-desktop{
+        padding-bottom: 64px;
+    }
 
     &::after {
         content: '';
@@ -16,6 +21,13 @@
         top: 0;
         bottom: 0;
         z-index: -1;
+
+        @include small-desktop {
+            transform: none;
+            left: 0;
+            right: 0;
+            width: auto;
+        }
     }
 
     &__application-form {
@@ -25,6 +37,10 @@
         row-gap: 48px;
         align-items: center;
         justify-content: center;
+
+        @include small-desktop {
+            grid-template-rows: repeat(2, min-content);
+        }
     }
 
     &__text {
@@ -37,24 +53,59 @@
         justify-items: center;
         justify-content: center;
         color: $generic-white;
+
+        @include small-desktop {
+            grid-template-columns: repeat(auto-fit, minmax(850, 1fr));
+        }
+
+        @include tablet {
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(2, min-content);
+            text-align: left;
+
+            h1 {
+                font-size: 24px;
+                margin: 0;
+            }
+        }
     }
 
-    &__form-fields{
+    &__form-fields {
         display: grid;
         grid-template-columns: repeat(3, 228px) min-content;
         grid-template-rows: 1fr;
         column-gap: 32px;
         align-items: center;
 
-        .c-btn{
-            padding:14px 32px;
+        .c-btn {
+            padding: 14px 32px;
             font-weight: 800;
             margin-left: 16px;
+
+            @include small-desktop {
+                margin: 10px 0 0;
+            }
         }
 
+        @include small-desktop {
+            grid-template-columns: repeat(auto-fit, minmax(228px, 1fr));
+            grid-template-rows: repeat(4, min-content);
+            row-gap: 36px;
+            justify-content: center;
+        }
+
+        @include phone {
+            grid-template-columns: 100%;
+        }
     }
 
-    &__input-field{
+    &__label {
+        @include phone {
+            width: 100%;
+        }
+    }
+
+    &__input-field {
         height: 52px;
         width: 100%;
         border-radius: 6px;
@@ -63,12 +114,18 @@
         color: $generic-white;
         padding: 16px;
 
-        &::placeholder{
+        &::placeholder {
             color: $generic-white;
         }
 
-        &:focus{
+        &:focus {
             outline: none;
+        }
+    }
+
+    .c-btn {
+        @include phone {
+            width: 100%;
         }
     }
 }

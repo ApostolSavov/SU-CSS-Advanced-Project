@@ -1,4 +1,4 @@
-.o-footer-grid-container{
+.o-footer-grid-container {
     display: grid;
     grid-template-columns: repeat(1, 220px) repeat(1, 256px) repeat(1, 145px) repeat(1, 167px) repeat(1, 177px);
     grid-template-rows: 1fr;
@@ -6,33 +6,39 @@
     row-gap: 32px;
     justify-content: center;
 
-    @include small-desktop{
+    @include small-desktop {
         grid-template-columns: repeat(auto-fit, minmax(124px, 168px));
     }
 
-    @include phone{
+    @include phone {
         grid-template-columns: 145px 167px;
         column-gap: 23px;
     }
 
 
-    .o-social-icons-container{
+    .o-social-icons-container {
         font-size: 1.75em;
         display: grid;
         grid-template-columns: repeat(2, max-content);
         grid-template-rows: 28px;
         column-gap: 30px;
 
-        @include phone{
+        i {
+            @include phone {
+                margin-right: 26px;
+            }
+        }
+
+        @include phone {
             margin-top: 20px;
         }
     }
 }
 
-.o-copyright-text-wrapper{
+.o-copyright-text-wrapper {
     text-align: center;
 
-    p{
+    p {
         margin: 0;
     }
 }

@@ -1,4 +1,18 @@
-.c-horizontal-green-dots{
+.c-horizontal-green-dots {
     height: 10px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+
+    @include custom-page-2 {
+        margin: 0 auto;
+        width: 89%;
+        overflow: hidden;
+    }
+
+    img{
+        @include custom-page-2{
+            width: max-content;
+        }
+    }
 }

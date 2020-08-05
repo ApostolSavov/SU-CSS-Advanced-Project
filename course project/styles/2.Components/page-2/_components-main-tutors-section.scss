@@ -1,6 +1,12 @@
 .c-main-tutors-section{
     min-height: 548px;
     padding: 96px 0;
+    width: 100%;
+
+    @include tablet{
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
 
     &__tutor-info{
         display: grid;
@@ -8,11 +14,23 @@
         grid-template-rows: 52px 280px;
         column-gap: 32px;
         row-gap: 24px;
+
+        @include tablet{
+            grid-template-columns: 1fr;
+            grid-template-rows: min-content min-content;
+            justify-items: center;
+        }
     }
 
     &__photo{
         grid-row: 1/3;
         align-self: start;
+        max-width: 172px;
+
+        @include tablet{
+            grid-row: 1/2;
+            margin-bottom: 8px;
+        }
 
     }
 
