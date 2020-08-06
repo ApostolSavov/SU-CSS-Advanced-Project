@@ -1,0 +1,77 @@
+.c-burger-menu {
+    display: none;
+    min-width: 24px;
+    position: relative;
+
+    @include tablet {
+        display: inline-block;
+    }
+
+    &__image {
+        min-width: 24px;
+        transition: transform 0.5s ease-out;
+    }
+
+    &__toggle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 24px;
+        width: 26px;
+        opacity: 0;
+        z-index: 10;
+
+        &:checked~.c-burger-menu__menu-list {
+            opacity: 1;
+            z-index: 0;
+            transform: translateX(-169px);
+        }
+
+        &:checked+.c-burger-menu__image {
+            transform: rotate(90deg);
+        }
+
+        &:hover {
+            cursor: url('./assets/other/cursor.svg'), auto;
+        }
+    }
+
+    &__menu-list {
+        position: absolute;
+        bottom: -293px;
+        left: 45px;
+        background-color: $generic-white;
+        border-bottom-left-radius: 12px;
+        box-shadow: $dp2-shadow;
+        padding: 6px 16px 12px;
+        opacity: 0;
+        transition: all 0.5s ease-out;
+        transform: translateX(0);
+        z-index: -1;
+    }
+
+    &__item {
+        padding: 9px 0;
+
+        &--blank {
+            position: absolute;
+            top: -4px;
+            left: -2px;
+            height: 10px;
+            width: 200px;
+            background-color: $generic-white;
+        }
+    }
+
+    &__link {
+        color: $grey-700;
+        font-size: 20px;
+        transition: color 0.5s ease-out;
+
+        &:hover,
+        &:active {
+            color: $secondary-800;
+        }
+    }
+}

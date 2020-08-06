@@ -14,7 +14,7 @@
         grid-template-rows: repeat(3, min-content);
     }
 
-    @include tablet{
+    @include tablet {
         height: 757px;
         row-gap: 32px;
     }
@@ -39,7 +39,7 @@
             width: auto;
         }
 
-        @include tablet{
+        @include tablet {
             background-image: url('./assets/images/big-yellow-panel-responsive.svg');
             height: 763px;
             transform: none;
@@ -108,13 +108,21 @@
         width: 100%;
         height: auto;
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         align-items: center;
         font-weight: bold;
 
         p {
             margin: 0;
             line-height: 22px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        span {
+            display: flex;
+            align-self: flex-start;
+            margin: 2px 4px 0 0;
         }
     }
 }
