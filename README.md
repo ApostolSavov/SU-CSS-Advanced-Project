@@ -1,6 +1,6 @@
 # SU-CSS-Advanced-Project
 
-#You can check the [SASS project here](https://apostolsavov.github.io/SASS%20course%20project/first-page.html)
+# You can check the [SASS project here](https://apostolsavov.github.io/SASS%20course%20project/first-page.html)
 
 Course project based on provided design
 
